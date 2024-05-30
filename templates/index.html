@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Form</title>
+</head>
+<body>
+    <h1>Voting Form</h1>
+    <form method="post">
+        <p>Option A: I keep my vote</p>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="hidden" name="option" value="keep">
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <form method="post">
+        <p>Option B: I give my vote</p>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="receiver">Enter who you want to give it to:</label>
+        <input type="text" id="receiver" name="receiver" required>
+        <input type="hidden" name="option" value="give">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

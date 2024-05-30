@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Results</title>
+</head>
+<body>
+    <h1>Voting Results</h1>
+    <h2>Entitled to vote only once:</h2>
+    <ul>
+        {% for voter in once %}
+            <li>{{ voter }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Allowed to vote twice:</h2>
+    <ul>
+        {% for voter in twice %}
+            <li>{{ voter }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
